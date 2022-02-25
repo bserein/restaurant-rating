@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantDetails from "./components/RestaurantDetails";
-import "./App.css";
 import { Layout } from "antd";
+import "./App.css";
 
 const { Header, Footer, Content } = Layout;
 
