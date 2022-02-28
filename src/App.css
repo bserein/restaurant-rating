@@ -1,53 +1,90 @@
-.App {
+.ant-layout-header {
+  height: 74px;
+  display: flex;
+  align-items: center; /* this is vertically */
+  justify-content: center; /* this is for horizontally*/
+  background-color: rgb(0, 2, 97);
   text-align: center;
+  font-size: large;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ant-layout-header h1 {
+  font-weight: 900;
   color: white;
+  line-height: 1;
+margin: 0;
 }
 
 .cards-wrapper {
-  max-width: 900px;
-  margin: 40px auto; 
-  max-height: auto;
+  margin: 90px auto 20px;
+}
 
-  }
+.cards-wrapper .ant-row {
+  display: flex;
+  justify-content: center;
+}
 
-  .detail-wrapper {
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: white;
-  }
+.ant-col {
+  width: 25%;
+  box-sizing: border-box;
+  margin: 20px 15px;
+}
 
-  .detail-wrapper img{
-   width: 100%;
-   height: 300px;
-   object-fit: cover;
-  }
+.ant-card {
+  width: 100%;
+}
 
-  .ant-card-cover img{
-    height: 200px;
-    object-fit: cover;
-  }
-  .header-text{
-    color: white;
-    font-size: 28;
-    text-align: center;
-    font-weight: 800;
-  }
+.detail-wrapper {
+  max-width: 600px;
+  margin: 90px auto 20px;
+  background-color: white;
+}
 
-  .restaurant-detail-wrapper {
-    padding: 30px;
-  }
+.ant-card-cover img {
+  height: 200px;
+  object-fit: cover;
+}
 
-  .submit-rating {
-    display: flex;
-    flex-direction: column;
+.detail-wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.ant-card-meta-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.restaurant-detail-wrapper {
+  padding: 30px;
+}
+
+@media screen and (max-width: 580px) {
+  .ant-col {
+    width: 100%;
   }
+}
+@media screen and (min-width: 581px) {
+  .ant-col {
+    width: 40%;
+  }
+  .ant-card-meta-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .ant-col {
+    width: 29%;
+  }
+  
+}
+
+.submit-rating {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  color:rgb(254, 86, 67)
+}

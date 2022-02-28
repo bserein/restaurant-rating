@@ -11,7 +11,7 @@ function App() {
     <>
       <Layout>
         <Header style={{ position: "fixed", zIndex: 999, width: "100%" }}>
-          <h1 className="header-text">Restaurant Finder</h1>
+          <h1 className="header-text">Restaurant Rating</h1>
         </Header>
         <Content>
           <Routes>

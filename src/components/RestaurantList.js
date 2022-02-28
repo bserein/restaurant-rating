@@ -19,14 +19,12 @@ export default function RestaurantList() {
   return (
     <div className="cards-wrapper">
       <Row gutter={16}>
-        {restaurants?.map((restaurant) => {
+        {restaurants.map((restaurant) => {
           return (
-            <Col span={8}  key={restaurant.id}>
+            <Col key={restaurant.id}>
                 <Link to={`/details/${restaurant.id}`}>
               <Card
-               
                 hoverable
-                style={{ width: 240, margin: 20 }}
                 cover={<img alt={`pictures of ${restaurant.name}`} src={restaurant.photoUrl}/>}
               >
                 <Meta title={restaurant.name} />
