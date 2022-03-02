@@ -37,7 +37,7 @@ function App() {
           </Routes>
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          &copy; 2022, Brian's Restaurant Finder
+          &copy; 2022, Brian's Restaurant Rating
         </Footer>
       </Layout>
     </>
